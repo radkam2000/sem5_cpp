@@ -5,6 +5,7 @@
 
 std::pair<int,int> duplikat(std::vector<int> v){
     std::set<int> s;
+    std::sort(v.begin(),v.end());
     int suma=0;
     for(std::vector<int>::iterator it = v.begin();it!=v.end();it++){
         s.insert(*it);

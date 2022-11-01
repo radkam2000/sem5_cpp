@@ -1,0 +1,4 @@
+ Zadanie 2
+
+ czy metoda calculateBonus nie powinna brzmieć calculate Salary
+ albo metodaCalculate Salary jako calculateBonus

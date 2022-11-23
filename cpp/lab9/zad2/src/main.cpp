@@ -4,7 +4,7 @@ int add_number(){
     int number;
     std::cout<<"Podaj liczbe do dodania"<<std::endl;
     std::cin>>number;
-    if(std::cin.fail()){
+    if(std::cin.fail() || number<0){
         throw -1;
     }
     else return number;
@@ -26,8 +26,9 @@ int main(){
     int liczba;
     while(true){
         try{
-            tries++;
+            tries++; //zliczanie wszystkich prob nawet z blednym typem
             liczba=add_number();
+            //treis++; zliczanie prob tylko gdy liczba jest intem >=0
             wynik+=liczba;
             check_win(wynik,tries);
         }

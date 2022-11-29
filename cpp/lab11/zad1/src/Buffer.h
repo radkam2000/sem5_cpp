@@ -1,9 +1,9 @@
 #ifndef BUFFER_H
 #define BUFFER_H
 class Buffer{
-protected:
-    virtual void add(int a);
-    virtual void write();
+public:
+    virtual void add(int a)=0;
+    virtual void write()=0;
     Buffer();
     ~Buffer();
 };
